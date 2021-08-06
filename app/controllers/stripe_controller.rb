@@ -1,12 +1,12 @@
 class StripeController < ApplicationController
     require "stripe"
     require 'httparty'
-    Stripe.api_key = 'sk_test_P9ZSzx6MHQxlxqRd1ZyMOKwZ'
+    Stripe.api_key = Credential.first.secret_key
       before_action :authenticate_user!
       def connect
         response = HTTParty.post("https://connect.stripe.com/oauth/token",
           query: {
-            client_secret: "sk_test_P9ZSzx6MHQxlxqRd1ZyMOKwZ",
+            client_secret: Credential.first.secret_key,
             code: params[:code],
             grant_type: "authorization_code",
           }

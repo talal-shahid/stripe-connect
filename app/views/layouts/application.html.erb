@@ -10,7 +10,7 @@
     <%= javascript_include_tag "application" 'data-turbolinks-track' => true %>
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script type="text/javascript">
-      Stripe.setPublishableKey("pk_test_ALPHtS20X3sl0klNKgknTcgQ");
+      Stripe.setPublishableKey("<%= Credential.first.publishable_key %>");
       $(document).ready(function() {
         var stripeResponseHandler;
     

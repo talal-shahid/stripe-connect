@@ -1,6 +1,6 @@
 class ChargesController < ApplicationController
     require "stripe"
-    Stripe.api_key = 'sk_test_P9ZSzx6MHQxlxqRd1ZyMOKwZ'
+    Stripe.api_key = Credential.first.secret_key
       def create
         begin
           charge = Stripe::Charge.create({
