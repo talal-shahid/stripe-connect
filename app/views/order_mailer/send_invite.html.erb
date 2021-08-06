@@ -1,0 +1,7 @@
+<p>Hi <%= @email %></p>
+    <p>You have received an invitation</p>
+    <% if Rails.env.development? %>
+        Click <a href="http://localhost:3000/users/sign_up" target="blank"> here</a> to sign up
+    <% else %>
+        Click <a href="https://young-mountain-95854.herokuapp.com/users/sign_up" target="blank"> here</a> to sign up
+    <% end %>
