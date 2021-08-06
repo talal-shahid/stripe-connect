@@ -25,6 +25,7 @@ gem 'stripe-rails'
 gem 'jquery-turbolinks'
 gem "httparty"
 gem 'jquery-rails'
+gem 'jquery-ui-rails', '5.0.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password

@@ -129,6 +129,8 @@ GEM
     jquery-turbolinks (2.1.0)
       railties (>= 3.1.0)
       turbolinks
+    jquery-ui-rails (5.0.5)
+      railties (>= 3.2.16)
     kaminari (1.2.1)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.2.1)
@@ -293,6 +295,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   jquery-rails
   jquery-turbolinks
+  jquery-ui-rails (= 5.0.5)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 4.1)
