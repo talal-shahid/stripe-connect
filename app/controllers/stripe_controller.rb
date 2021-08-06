@@ -34,12 +34,5 @@ class StripeController < ApplicationController
           #notice: 'User successfully connected with Stripe!'
         end
       end
-  
-      def dashboard
-        account = Stripe::Account.retrieve(current_user.stripe_user_id)
-        login_links = account.login_links.create
-    
-        redirect_to login_links.url
-      end
   end
   

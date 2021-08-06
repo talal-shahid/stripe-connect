@@ -1,12 +1,10 @@
 <div class="text-center">
   <div class="form-signin">
     <% if current_user.stripe_user_id %>
-      <%= link_to "Go to Stripe Dashboard", stripe_dashboard_path(current_user.id) %>
+      <p>Already Onboarded</p>
     <% else %>
       <%= link_to 'Connect Stripe', stripe_button_link %>
     <% end %>
-    <br/ >
-    <br />
     <% if user_signed_in? %>
       <%= link_to "Make Payment", new_charge_path %>
       <br/ >
