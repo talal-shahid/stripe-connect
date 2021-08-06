@@ -5,6 +5,7 @@
     <% else %>
       <%= link_to 'Connect Stripe', stripe_button_link %>
     <% end %>
+    <br />
     <% if user_signed_in? %>
       <%= link_to "Make Payment", new_charge_path %>
       <br/ >
