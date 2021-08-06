@@ -291,6 +291,7 @@ DEPENDENCIES
   devise
   httparty
   jbuilder (~> 2.7)
+  jquery-rails
   jquery-turbolinks
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
