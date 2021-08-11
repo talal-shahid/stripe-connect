@@ -106,6 +106,16 @@ Rails.application.configure do
     authentication:       'plain',
     enable_starttls_auto: true
   }
+
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.sendgrid.com',
+    port:                 '587',
+    domain:               'young-mountain-95854.herokuapp.com',
+    user_name:            'apikey',
+    password:             ENV["PASSWORD"],
+    authentication:       'plain',
+    enable_starttls_auto: true
+  }
   # Inserts middleware to perform automatic connection switching.
   # The `database_selector` hash is used to pass options to the DatabaseSelector
   # middleware. The `delay` is used to determine how long to wait after a write
